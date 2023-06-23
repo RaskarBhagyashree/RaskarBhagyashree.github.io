@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    /*max-width: 100%;
+    overflow-x: hidden;*/
+}
+
+
+/* Navigation bar */
+.navBar{
+    background-color: #2C3333;
+    height: 100px;
+    width: 99.5%;
+    margin: 5px;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    z-index: 10;
+}
+
+.navButtons{
+    margin-right: 200px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.navButtons a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Bree Serif', serif;
+    margin: 20px 20px;
+    font-size: 25px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+
+.navButtons a:hover{
+    text-shadow: 1px 1px 2px #548CA8;
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.introSection{
+    height: 700px;
+    background-color:#E7F6F2;   
+}
+
+.introSection > h1, h2, h3{
+    position: relative;
+    top: 300px;
+    left: 150px;
+    font-family: 'Bree Serif', serif;
+    line-height: 50px;
+}
+
+.introSection > h1{
+    font-size: 50px;
+    color: #334257;
+    text-shadow: 1px 1px 2px #334257;
+}
+
+.changeText{
+    font-size: 25px;
+
+}
+
+.introSection > h3{
+    font-size: 30px;
+}
+ 
+
+.homeImg{
+    float: right;
+    position: absolute;
+    top: 150px;
+    left: 780px;
+}
+
+.changeText::before{
+    content: "Full stack Developer";
+    animation: changeText infinite 6s;
+    animation-timing-function: ease-in-out;
+   
+}
+
+@keyframes changeText{
+    
+    25%{
+        color: #E7F6F2;
+    }
+    50% {
+        color: black;
+        content: "Python Developer";
+    }
+    75%{
+        color: #E7F6F2;
+    }
+}
+
+
+/* About me Section */
+
+.aboutMeSection{
+    position: relative;
+    background-image: linear-gradient(#E7F6F2,#A5C9CA);    
+    height: 600px;
+}
+
+.aboutmeImg{
+    /*float: left;
+    position:absolute;*/
+    top: 250px;
+    right: 1050px;
+}
+
+.aboutMeSection h3{
+    position: absolute;
+    left: 800px;
+    top: 80px;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+}
+
+.aboutMeSection h2{
+    position: absolute;
+    left: 800px;
+    top: 350px;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+}
+.aboutMeSection ul{
+    position: absolute;
+    left: 800px;
+    top: 400px;
+    font-family: serif;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.aboutMeSection p{
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    font-family: serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+/* Projects Section */
+
+.projectsSection{
+    position: relative;
+    background-image: linear-gradient(#A5C9CA, #E7F6F2);    
+    height: 1100px;
+}
+
+.projectsSection h3{
+    font-size:40px;
+    position: abosulte;
+    top: 110px;
+    font-family: 'Bree Serif', serif;    
+}
+
+.projectDescription {
+
+   /* position: absolute;*/
+    left: 900px;
+    top: 400px;
+    font-family: serif;
+    font-size: 20px;
+    margin-left: 25px;
+    width:fit-content;
+
+
+
+}
+
+.projectImg{
+    float: right;
+    position: absolute;
+    left: 500px;
+    top: 90px;
+}
+
+.projectsList{
+    position: absolute;
+    right: 900px;
+    top: 200px;
+    margin-right: 150px;
+    margin-left: 300px;
+    font-style: serif;
+}
+
+.projectsList > li{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.projectsList a{
+    color: #2C3333;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.projectsList a:hover{
+    color: #395B64;
+}
+
+.projectsList p{
+    margin-left: 10px;
+}
+
+.chatDescription{
+    left: 900px;
+    top: 400px;
+    font-family: serif;
+    font-size: 20px;
+    margin-left: 25px;
+    width:fit-content;
+}
+
+
+/* Contact Section */
+.contactSection{
+    height: 700px;
+    background-color:#E7F6F2;
+    position: relative;
+}
+
+.contactImg{
+    float: left;
+    position: absolute;
+    bottom: 300px;
+    right: 600px;
+}
+
+.contactSection h3{
+    position: absolute;
+    left: 950px;
+    top: 1px;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    font-size: 40px;
+}
+
+.contactSection form{
+    float: right;
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+
+.contactSection label{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+}
+
+input{
+    padding-left: 5px;
+    border-radius: 6px;
+    color: #2C3333;
+    width: 400px;
+    height: 30px;
+    border-color: #2C3333;
+
+}
+
+input:focus{
+    outline: none;
+    border-color: #395B64;
+    box-shadow: 0px 2px #395B64;
+
+}
+
+textarea{
+    padding-left: 5px;
+    padding-top: 2px;
+    border-radius: 6px;
+    color: #2C3333;
+    width: 400px;
+    border-color: #2C3333;
+
+}
+
+textarea:focus{
+    outline: none;
+    border-color: #395B64;
+    box-shadow: 0px 2px #395B64;
+
+}
+
+input[value=Submit]{
+   /* float: right;*/
+    width: 200px;
+    color: white;
+    background-color: #395B64;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    margin-left: 100px;
+
+}
+
+input[value=Submit]:hover{
+    background-color: #A5C9CA;
+    color: #2C3333;
+}
+
+/* FooterSection */
+.footerSection{
+    height: 30px;
+    background-color: #2C3333;
+}
+
+.footerSection p{
+    float: right;
+    margin-right: 15px;
+    color: whitesmoke;
+}

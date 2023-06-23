@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Bhagyashree Raskar Portfolio Website</Title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <div class="navBar">
+            <div class="navButtons">
+                <a href="#">Home</a>
+                <a href="#aboutMe">About Me</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+           
+        </div>
+
+        <!--Intro Section-->
+        <div class="introSection">
+            <h3>Hello,</h3>
+            <h1>I am Bhagyashree Raskar</h1>
+            <h3 class="changeText"></h3>
+            <img src="Images/HomeImage-.png" alt="homePage" class="homeImg" height="550" width="600">
+        </div>
+        
+        <!--About me Section-->
+        <div class="aboutMeSection" id="aboutMe">
+            <img src="Images/AboutMe.png" alt="aboutMe" class="aboutmeImg" height="550" width="600">
+            <h3>About Me</h3>
+            <p>I am a creative and innovative developer where your requirements and my talent can give you a worth your pay output. You are investing your money and I am investing my time, a productive output will definitely be successful. Let's work together and grow our worth!</p>
+
+            <h2>Technical Skills:</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript, Bootstrap</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQL</li>
+                
+            </ul>
+        </div>
+
+        <!--Projects Section-->
+        <div class="projectsSection" id="project">
+            <img src="Images/project.png" alt="projectImage" height="750" width="800" class="projectImg">
+            <h3>Projects</h3>
+            <ul type="disc" class="projectsList">
+                <li>Task Planner Application</li>
+                
+                <ul type="circle" class="projectDescription">
+                    <li><p>This application has registration and authentication
+                         functionality.Session is used to retrieve the id of logged 
+                         in user whenever required.</p></li>
+                    <li><p>This is multiuser application where user can add,edit,delete task.</p></li>
+                    <li><p>User dashboard has all the functionalities such as add task, view all task,
+                         filter task by category,status. User can filter task between date alongwith
+                          datesorting for newest and oldest task.</p></li>
+                    <li><p><a href="https://github.com/RaskarBhagyashree/todo.git">Github Link</a></p></li>
+
+                </ul> 
+                       
+                       
+                <li>Chat Application </li>
+                   
+                <p class="chatDescription">This application is simple chat application which will allow user to chat with others.</p>
+                <p><a href="https://github.com/RaskarBhagyashree/ChatApp.git">Github Link</a></p>      
+                    
+            </ul>
+        </div>
+
+        <!--Contact Section-->
+        <div class="contactSection" id="contact">
+            <img src="Images/contact.png" alt="contactImage" width="750" height="500" class="contactImg">
+            <h3>Contact</h3>
+            <form action="">
+                <div>
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="nameInput">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="emailInput">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea name="messageInput" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div >
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+
+        <!--footer Section-->
+        <div class="footerSection">
+            <p>Bhagyashree Raskar Portfolio</p>
+        </div>
+
+
+    </body>
+</html>
