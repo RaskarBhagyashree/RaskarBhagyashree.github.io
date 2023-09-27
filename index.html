@@ -3,6 +3,8 @@
     <head>
         <Title>Bhagyashree Raskar Portfolio Website</Title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
@@ -74,26 +76,31 @@
             <img src="Images/contact.png" alt="contactImage" width="750" height="500" class="contactImg">
             <h3>Contact</h3>
             <form action="">
-                <div>
+                <div class="input-group">
                     <label for="name">Name:</label>
                     <br>
-                    <input type="text" id="name" name="nameInput">
+                    <input type="text" id="contact-name" name="nameInput" placeholder="Enter name" onkeyup="validateName()" >
+                    <span id="name-error"></span>
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="email">Email:</label>
                     <br>
-                    <input type="email" id="email" name="emailInput">
+                    <input type="email" id="contact-email" name="emailInput"  placeholder="Enter Email" onkeyup="validateEmail()">
+                    <span id="mail-error"></span>
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="message">Message:</label>
                     <br>
-                    <textarea name="messageInput" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="messageInput" id="contact-msg" cols="30" rows="10"  placeholder="Enter message" onkeyup="validateMsg()"></textarea>
+                    <span id="msg-error"></span>
                 </div>
 
                 <div >
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="return validateForm()">
+                    <span id="submit-error"></span>
+
                 </div>
             </form>
 
@@ -106,4 +113,5 @@
 
 
     </body>
+    <script src="myscript.js"></script>
 </html>
